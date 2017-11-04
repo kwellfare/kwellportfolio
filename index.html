@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/57841faadd.js"></script>
-
+    
+<script>
+        // Asynchronously load non-critical css 
+        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+        // load css file async
+        loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+    </script>
 
 </head>
 
@@ -43,7 +48,7 @@
                     <div class="contact">
 
                         <ul class="fa-ul">
-                            <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>email</li>
+                            <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>Email me</li>
                             <li><i class="fa-li fa fa-github" aria-hidden="true"></i><a class="links" href="https://github.com/kwellfare" target="_blank">Github</a></li>
 
                         </ul>
@@ -121,12 +126,12 @@
         <div></div>
 
     </div>
+    
     <script src="js/script.js"></script>
 </body>
 <footer>
     <div class="credits">
-        logo created with <a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a>
-        <!-- logomakr.com/871ZK9-->
+       
     </div>
 
 </footer>

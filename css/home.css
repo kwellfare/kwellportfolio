@@ -1,11 +1,31 @@
-body {
+html {
+    margin:0;
+   padding:0;
+   height:100%;
+}
 
+
+body {
+     height:100%;
     margin: 0px;
     background-color: #18183b;
     color: white;
     font-family: 'Open Sans', Helvitica, Ariel, sans-serif;
 
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 h1 {
     text-align: center;
@@ -22,7 +42,9 @@ nav {
     flex-direction: row;
     margin: 0px;
     padding: 10px;
+    
 }
+
 
 .heading {
     font-family: 'Open Sans', Helvitica, Ariel, sans-serif;
@@ -30,6 +52,12 @@ nav {
     text-decoration: none;
     font-variant: small-caps;
     font-size: 20px;
+    transition-timing-function: ease-in;
+    animation-delay: .5s;
+     animation-duration:1s;
+    animation: fadeInUp 1; 
+     -webkit-animation: fadeInUp 1s;
+     
 }
 
 #hello {
@@ -41,10 +69,21 @@ nav {
     text-shadow: 2px 2px #072576;
     line-height: 30px;
     font-size: 55px;
+    transition-timing-function: ease-in;
+    animation-delay: .5s;
+     animation-duration:1s;
+    animation: fadeInUp 1; 
+     -webkit-animation: fadeInUp 1s;
+     
 }
 
 #name {
     font-size: 40px;
+     transition-timing-function: ease-in;
+    animation-delay: .5s;
+     animation-duration:1s;
+    animation: fadeInUp 1; 
+     -webkit-animation: fadeInUp 1s;
 }
 
 .top {
@@ -55,9 +94,16 @@ nav {
     height: 500px;
     background-size: cover;
     margin: 0px;
+    transition-timing-function: ease-in 1;
+    animation-fill-mode: both;
+     animation-duration:1s;
+    animation-delay: .25s;
+     -webkit-animation: fadeInUp 1s;
+    animation: fadeInUp 1s; /* Fading effect takes 1 second */
 
 
 }
+
 
 
 .links {
@@ -83,28 +129,43 @@ li {
     margin: 0px;
     width: auto;
     height: 500px;
+    
 }
 
 .logo {
-    background: rgb(184, 141, 221);
-    background-image: url(/images/Logomakr_871ZK9.png);
+ 
+    background-image: url(/images/logokwel.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:top;
     background-size: contain;
-    width: 60px;
-    height: 50px;
-    padding: 6px;
-    border-radius: 60px;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 100px;
+    height: 60px;
+    padding: 0px;
+    
+
+   transition-timing-function: ease-in;
+    animation-delay: .5s;
+     animation-duration:1.5s;
+    animation: fadeInUp 1.5; 
+     -webkit-animation: fadeInUp 1.5s;
+   
 }
 
 .below {
     display: flex;
     justify-content: center;
-    margin: 0px;
+   align-items:flex-start;
+    margin: 0;
     width: auto;
     padding: 0px;
+   min-height:100%;
+   position:relative;
+     transition-timing-function: ease-in 1;
+    animation-fill-mode: both;
+     animation-duration:1s;
+    animation-delay: 1s;
+     -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
 .about {
@@ -122,6 +183,11 @@ li {
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin-right: 0px;
+     transition-timing-function: ease-in;
+    animation-delay: .5s;
+     animation-duration:1.5s;
+    animation: fadeInUp 1.5; 
+     -webkit-animation: fadeInUp 1.5s;
 }
 
 .contact {
@@ -167,13 +233,14 @@ li {
 }
 
 #project-list {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
+   margin-top:50px;
     flex-direction: column;
     height: 100%;
     overflow: auto;
+   
 }
 
 #project-list h2 {
@@ -181,19 +248,34 @@ li {
     letter-spacing: 3px;
     font-size: 30px;
     color: white;
+     margin: 0 0 20px 0;
+    background: rgba(76, 64, 216, 0.5);
+      border: 2px dashed #999;
+/*background: linear-gradient(to top, #6600cc 0%, #4c40d8 100%); 2nd Choice*/
+       padding:40px 20px;
+        display: flex;
+        text-align: center;
+    border-radius: 5px;
+    
+ 
 
 }
 
 .project {
-    background-color: #6c6a6f;
+/*   background-color: #6c6a6f; 2nd choice*/
+   background: rgba(76, 64, 216, 0.46);
+   
     color: #ffffff;
     padding: 18px;
     width: 350px;
     text-align: center;
-    border: 2px solid #6c6a6f;
-    outline: none;
-    margin: 5px 0px;
+
+    border: 0;
     font-size: 22px;
+    margin:2px 0;
+    
+    
+
 
 }
 
@@ -209,8 +291,8 @@ button.project:hover {
 
 .project-item {
 
-    margin: 0px;
-    padding: 0px 10px;
+    margin: 0;
+    padding: 0 10px;
     background-color: white;
     color: #0b0b0b;
     width: 710px;
@@ -356,15 +438,18 @@ div.project-item {
 
     }
     .myphoto {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
     }
-
+    .intro,
     .top {
         height: 400px;
     }
     .project-item {
         width: 300px;
+    }
+    #project-list {
+        margin-bottom: 50px;
     }
     #spa,
     #polling {
