@@ -14,14 +14,34 @@ body {
 
 }
 
-@keyframes fadeInUp {
+footer {
+    height:60px;
+}
+
+@-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
 
   100% {
     opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }
@@ -38,7 +58,12 @@ h1 {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: 0px;
     padding: 10px;
@@ -52,8 +77,11 @@ nav {
     text-decoration: none;
     font-variant: small-caps;
     font-size: 20px;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
+     -webkit-animation-duration:1s;
      animation-duration:1s;
     animation: fadeInUp 1; 
      -webkit-animation: fadeInUp 1s;
@@ -62,15 +90,22 @@ nav {
 
 #hello {
     padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0px;
     color: rgb(185, 98, 98);
     text-shadow: 2px 2px #072576;
     line-height: 30px;
     font-size: 55px;
+    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
+     -webkit-animation-duration:1s;
      animation-duration:1s;
     animation: fadeInUp 1; 
      -webkit-animation: fadeInUp 1s;
@@ -79,8 +114,11 @@ nav {
 
 #name {
     font-size: 40px;
+     -webkit-transition-timing-function: ease-in;
      transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
+     -webkit-animation-duration:1s;
      animation-duration:1s;
     animation: fadeInUp 1; 
      -webkit-animation: fadeInUp 1s;
@@ -94,9 +132,13 @@ nav {
     height: 500px;
     background-size: cover;
     margin: 0px;
+    -webkit-transition-timing-function: ease-in 1;
     transition-timing-function: ease-in 1;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+     -webkit-animation-duration:1s;
      animation-duration:1s;
+    -webkit-animation-delay: .25s;
     animation-delay: .25s;
      -webkit-animation: fadeInUp 1s;
     animation: fadeInUp 1s; /* Fading effect takes 1 second */
@@ -143,8 +185,13 @@ li {
     padding: 0px;
     
 
+   -webkit-transition-timing-function: ease-in;
+    
+
    transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
+     -webkit-animation-duration:1.5s;
      animation-duration:1.5s;
     animation: fadeInUp 1.5; 
      -webkit-animation: fadeInUp 1.5s;
@@ -152,24 +199,38 @@ li {
 }
 
 .below {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+   -webkit-box-align:start;
+   -ms-flex-align:start;
    align-items:flex-start;
     margin: 0;
     width: auto;
     padding: 0px;
    min-height:100%;
    position:relative;
+     -webkit-transition-timing-function: ease-in 1;
      transition-timing-function: ease-in 1;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+     -webkit-animation-duration:1s;
      animation-duration:1s;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
      -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
 .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     z-index: 1;
     color: white;
@@ -183,15 +244,22 @@ li {
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin-right: 0px;
+     -webkit-transition-timing-function: ease-in;
      transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
+     -webkit-animation-duration:1.5s;
      animation-duration:1.5s;
     animation: fadeInUp 1.5; 
      -webkit-animation: fadeInUp 1.5s;
 }
 
 .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 10px;
 }
@@ -206,7 +274,7 @@ li {
 }
 
 #polling {
-    background-color: #080014;
+    background-color: #2a1c40;
     background-image: url(/images/NRHphone.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -217,26 +285,75 @@ li {
 }
 
 #spa {
-    background-color: #080014;
-    background-image: url(/images/spa_delight.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 710px;
-    height: 200px;
-    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #2a1c40;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+
 
 }
+
+#m-spa {
+    width: 250px;
+    height: 250px;
+    background-image: url(/images/SDmobile.png);
+   background-color: #2a1c40;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    
+    
+}
+
+#w-spa {
+    width: 656px;
+    height: 200px;
+    background-image: url(/images/SDscreenshot-web.jpg);
+    background-color: #2a1c40;
+    background-repeat: no-repeat;
+    background-position: bottom;
+   padding: 15px;
+    background-size:contain;
+    
+}
 .proj-title {
-    background-color: black;
+    background-color: rgb(181, 181, 181);
     margin: 0px;
     padding: 20px 0px;
+    color: #525252;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.button-grp {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+     background-color: #191026;
+    padding: 20px;
+    
 }
 
 #project-list {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
    margin-top:50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
     overflow: auto;
@@ -253,6 +370,8 @@ li {
       border: 2px dashed #999;
 /* background: linear-gradient(to top, #6600cc 0%, #4c40d8 100%); 2nd Choice*/
        padding:40px 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: center;
     border-radius: 5px;
@@ -285,6 +404,7 @@ button.project:hover {
     border: 2px solid #4c2180;
     background-color: #11115c;
     color: rgb(185, 98, 98);
+    -webkit-transition-timing-function: ease-in-out 5s;
     transition-timing-function: ease-in-out 5s;
     overflow: hidden;
 }
@@ -316,11 +436,12 @@ button.project:hover {
     padding: 5px;
     width: 300px;
     text-align: center;
-    border: 2px solid #6c6a6f;
+    border: none;
     outline: none;
     margin-bottom: 20px;
     font-size: 20px;
     padding: 10px;
+    margin: 0 10px;
 
 }
 
@@ -340,6 +461,7 @@ div.project-item {
     display: none;
     text-align: justify;
     padding: 40px;
+    -webkit-transition: max-height 0.2s ease-out;
     transition: max-height 0.2s ease-out;
 }
 
@@ -384,9 +506,18 @@ div.project-item {
 }
 
 .nrh-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
 }
@@ -414,7 +545,11 @@ div.project-item {
 }
 
 .back {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 5px;
 }
