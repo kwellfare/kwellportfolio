@@ -332,8 +332,15 @@ li {
 
 
 .button-grp {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
      background-color: #191026;
     padding: 20px;
@@ -572,6 +579,27 @@ div.project-item {
         margin: 0px;
 
     }
+    
+    .button-grp {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    .inside {
+        margin: 5px 0;
+        width: 250px;
+    }
     .myphoto {
         width: 130px;
         height: 130px;
@@ -586,13 +614,37 @@ div.project-item {
     #project-list {
         margin-bottom: 50px;
     }
-    #spa,
+    #spa {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 300px;
+        
+    }
     #polling {
         width: 300px;
     }
-    nrh-content {
-        ;
+    
+    #m-spa {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-position: top;
+        
     }
+    
+    #w-spa {
+        height: 100px;
+        width: 250px;
+    }
+    
     .nrh-container,
     .nrh-indepth {
         width: 400px;
