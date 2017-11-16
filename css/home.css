@@ -2,6 +2,7 @@ html {
     margin:0;
    padding:0;
    height:100%;
+    
 }
 
 
@@ -11,6 +12,8 @@ body {
     background-color: #18183b;
     color: white;
     font-family: 'Open Sans', Helvitica, Ariel, sans-serif;
+    
+    
 
 }
 
@@ -628,6 +631,9 @@ div.project-item {
         width: 300px;
         
     }
+    
+    
+    
     #polling {
         width: 300px;
     }

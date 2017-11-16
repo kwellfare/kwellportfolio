@@ -7,10 +7,21 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
 
-    
-<script>
+
+    <script>
         // Asynchronously load non-critical css 
-        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+        function loadCSS(e, t, n) {
+            "use strict";
+            var i = window.document.createElement("link");
+            var o = t || window.document.getElementsByTagName("script")[0];
+            i.rel = "stylesheet";
+            i.href = e;
+            i.media = "only x";
+            o.parentNode.insertBefore(i, o);
+            setTimeout(function() {
+                i.media = n || "all"
+            })
+        }
         // load css file async
         loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     </script>
@@ -48,7 +59,11 @@
                     <div class="contact">
 
                         <ul class="fa-ul">
-                            <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>Email me</li>
+                            <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>
+                                
+                                <a class="links" href="http://www.google.com/recaptcha/mailhide/d?k=01WKzMCYrn90x_V0OG7XxGNQ==&amp;c=KrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01WKzMCYrn90x_V0OG7XxGNQ\x3d\x3d\x26c\x3dKrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Email Me</a>
+
+                            </li>
                             <li><i class="fa-li fa fa-github" aria-hidden="true"></i><a class="links" href="https://github.com/kwellfare" target="_blank">Github</a></li>
 
                         </ul>
@@ -75,59 +90,61 @@
             <h2> Portfolio Projects</h2>
 
 
-            <button class="project">Polling Web Application</button>
+            <button class="project"><i class="fa fa-caret-down pull-left"aria-hidden="true"></i> &nbsp;Polling Web Application</button>
             <div class="project-item">
                 <h1 class="proj-title">New Resident Hub</h1>
                 <div id="polling"></div>
-                
+
                 <div class="button-grp">
-                
-                <a href="newresidenthub"><button class="inside">Demo</button></a>
-                <a href="nrhdocumentation.html"><button class="inside">Additional Documentation</button></a>
-                    
-                
+
+                    <a href="http://newresidenthub.xyz" target="_blank"><button class="inside">Demo</button></a>
+                    <a href="nrhdocumentation.html"><button class="inside">Additional Documentation</button></a>
+
+
                 </div>
                 <h3>Description</h3>
                 <p>Website that polls local residents on the quality of businesses in the area.
                     <br> Built with Meteor, MongoDB, Node.js, Blaze, Bootstrap, HTML, CSS &amp; Javascript
                 </p>
-                    
-                
-                    <h3>Project Choice</h3>
-                    <p>Users of local services would be able to vote on recommending multiple businesses by answering three quesions according to their personal experience. New residents would use the voting scores to make a quick and more informed decision for a business for their needs. </p><p> The application utilized real time updates to avoid additional page loads. Resulting in an improved user experience.  Showing instant results from the database update from other user interactions is also likely to boost engagement. It reinforces the idea that a visitor should get involved in the interaction too.</p>
-                    <h3>Creating the New Resident Hub</h3>
-                    <p>
-                        Creating the project was a valuable experience because it provided some hands-on experience on building with node.js. Using the tutorial from <a id="tutorial" href="https://scotch.io/tutorials/learn-meteor-js-from-scratch-build-a-polling-app#comments-section">scotch.io </a> I built a polling application for the main section of the website. I specifically chose to develop the project to learn a bit more about the full-stack process. Being able to understand the process will ultimately lead to a better constructed project.</p> <p>On designing the site, I was able to get more comfortable with learning how to handle the interactions that occurred in the database. I also learned a great deal about the technologies used to create a web application with node.js. Command line basics was another new skill picked up while setting up a testing environment. I also took time to familiarize myself with the Meteor Framework, MongoDB, Git, the NPM package manager and Blaze templates. 
-                    </p>
-                    
 
-                
 
-                
+                <h3>Project Choice</h3>
+                <p>Users of local services would be able to vote on recommending multiple businesses by answering three quesions according to their personal experience. New residents would use the voting scores to make a quick and more informed decision for a business for their needs. </p>
+                <p> The application utilized real time updates to avoid additional page loads. Resulting in an improved user experience. Showing instant results from the database update from other user interactions is also likely to boost engagement. It reinforces the idea that a visitor should get involved in the interaction too.</p>
+                <h3>Creating the New Resident Hub</h3>
+                <p>
+                    Creating the project was a valuable experience because it provided some hands-on experience on building with node.js. Using the tutorial from <a id="tutorial" href="https://scotch.io/tutorials/learn-meteor-js-from-scratch-build-a-polling-app#comments-section">scotch.io </a> I built a polling application for the main section of the website. I specifically chose to develop the project to learn a bit more about the full-stack process. Being able to understand the process will ultimately lead to a better constructed project.</p>
+                <p>On designing the site, I was able to get more comfortable with learning how to handle the interactions that occurred in the database. I also learned a great deal about the technologies used to create a web application with node.js. Command line basics was another new skill picked up while setting up a testing environment. I also took time to familiarize myself with the Meteor Framework, MongoDB, Git, the NPM package manager and Blaze templates.
+                </p>
+
+
+
+
+
             </div>
 
 
 
-            <button class="project">Spa Business Website</button>
+            <button class="project"><i class="fa fa-caret-down pull-left" aria-hidden="true"></i> &nbsp;Spa Business Website</button>
 
             <div class="project-item">
-                
+
                 <h1 class="proj-title">Spa Delight</h1>
                 <div id="spa">
                     <figure id="m-spa"> </figure>
                     <figure id="w-spa"> </figure>
                 </div>
-                  
-                 <div class="button-grp">
-                <a href="spa-delight/index.html" target="_blank"><button class="inside">Demo</button></a>
+
+                <div class="button-grp">
+                    <a href="spa-delight/index.html" target="_blank"><button class="inside">Demo</button></a>
                 </div>
                 <br>
                 <h3>Description</h3>
                 <p>Website for a massage and facial spa. Features a contact form and responsive design. The site does not use frameworks.<br><br> Built with HTML, CSS &amp; Javascript</p>
-              
 
 
-                
+
+
             </div>
 
 
@@ -138,14 +155,14 @@
         <div></div>
 
     </div>
-    
+
     <script src="js/script.js"></script>
 
-<footer>
-    <div class="credits">
-       
-    </div>
+    <footer>
+        <div class="credits">
 
-</footer>
-    </body>
+        </div>
+
+    </footer>
+</body>
 </html>
