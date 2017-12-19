@@ -1,0 +1,1183 @@
+/*
+Medium devices
+-----------------------px----------------------------
+-------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 690px),
+only screen and (min-device-width: 481px) and (max-device-width: 690px) {
+
+    .container {
+        height: 100%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background-image: none;
+        
+
+    }
+    .container__heading {
+        width: 34em;
+        height: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+
+    nav,
+    .top,
+    .inner2,
+    .circle,
+    .rightfooter {
+        display: none;
+    }
+    #follow {
+        display: none;
+    }
+    body {
+        width: 40em;
+        background-color: #a8c2d8;
+        background-image: none;
+    
+    
+       
+
+
+    }
+    footer {
+        width: 41em;
+        padding: 10px 0 0 20px;
+
+    }
+
+    #mobile-logo {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        
+        
+        height: 0;
+        margin: 0;
+        font-size: .85em;
+        color: #4a4848;
+        letter-spacing: 4px;
+    }
+
+    .dropbtn {
+        display: block;
+        
+        background-color: #7f95a7;
+        min-width: 250px;
+        color: white;
+        padding: 22px;
+        font-size: 1.5em;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #7f95a7;
+        min-width: 250px;
+        -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        text-align: center;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 1px 36px;
+        text-decoration: none;
+        display: block;
+        font-size: 1em;
+        line-height: .5em;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: #7f95a7;
+    }
+
+    #yourself {
+        margin: 90px 0 0 0;
+        font-size: 2em;
+        text-align: center;
+        width: 13em;
+        letter-spacing: 5px;
+
+
+    }
+    .homecontainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 26em;
+        
+    }
+    .homebanner {
+
+        max-width: 225px;
+        max-height: 225px;
+        margin: 30px 0;
+    }
+    .title,
+    .subtitle {
+        font-size: 1em;
+        border: none;
+        
+        margin: 0;
+        line-height: 1.5em;
+        max-width: 200px;
+        max-height: 250px;
+    }
+
+    .subbelow1 {
+
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .inner1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0;
+        
+    }
+    .client {
+       margin-top: 60px;
+        
+        border: 10px solid rgba(72, 86, 101, 0.4);
+
+    }
+    .let {
+        padding-top: 20px;
+        width: 14em;
+        font-size: 2em;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+
+    #visit {
+        font-size: 1.56em;
+        padding: 0;
+    
+        line-height: 1.3em;
+        text-align: justify;
+    }
+    
+
+    .container__content-blurred {
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0;
+        
+        
+
+    }
+
+    .benefits {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        padding: 0;
+        text-align: center;
+        background-image: none;
+
+    }
+    .benefits__container {
+        width:400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+        
+        
+        height: 300px;
+        margin: 0;
+        
+
+    }
+    .flex-item1 {
+        width: 30%;
+        max-height: 20px;
+        background: none;
+        padding: 0 30px 0 30px;
+        margin: 0;
+        font-size: 1.8em;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1em;
+
+    }
+    .flex-item2 {
+        width: 30%;
+        max-height: 0;
+        background: none;
+        padding: 0 30px 0 30px;
+        font-size: 1.8em;
+        margin: 0;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1em;
+        
+    }
+
+
+    .subscribe {
+        width: 190px;
+        font-size: 1.5em;
+        
+        height: 55px;
+        margin: 0 10px 10px 0;
+    }
+    #btnprivacy {
+         width: 200px;
+         height: 55px;
+        font-size: 1.1em;
+    }
+
+    #benefits-title {
+        margin: 0;
+        font-size: 2.4em;
+        padding: 50px 0 90px 0;
+    }
+    .leftfooter {
+        width: 20em;
+        font-size: large;
+    }
+    
+    .popup-container {
+
+    width: 90%;
+}
+    
+   
+    .pop-footer {
+        padding-bottom: 50px;
+    }
+    #emailsub {
+    width:300px;
+}
+    
+    .modal-content {
+        width: 80%;
+        
+    }
+    /* 
+-------------------------------------------------------------------------------
+                                          Contact Page 
+*/
+    .container__content {
+        height: 100%;
+        width: 42em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+    .contact__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+       
+
+    }
+    p {
+        font-size: 24px;
+    }
+
+    .in-touch {
+        width: 80%;
+        font-size: 20px;
+        margin:50px 0;
+
+    }
+    .contactsbanner {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 40px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    address {
+        font-size: 24px;
+        width: 500px;
+        height: 800px;
+        
+    }
+    .contact-info-container {
+        width: 450px;
+
+        padding: 0 30px;
+        margin-right: 0;
+
+    }
+
+    .contact-info {
+        width: 400px;
+    }
+
+    #contact-form {
+        width: 450px;
+        padding: 32px;
+
+    }
+
+    /* 
+-------------------------------------------------------------------------------
+                                          Services Page 
+*/
+    .container__content-services {
+        width: 42em;
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+         height: 100%;
+        
+        
+        
+
+    }
+    
+    .servicebanner {
+        margin-top: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+    }
+    .subbelow1-service {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        
+        
+    
+        
+
+    }
+    
+    .subcol3,
+    .subcol1 {
+        display: none;
+    }
+
+    .servicebanner p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 26px;
+        line-height: 1em;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+        
+    }
+
+
+    
+    .subcol2-services {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0;
+        
+    
+        
+        
+        
+    }
+
+
+
+
+    /* 
+-------------------------------------------------------------------------------
+                                          Staff Page 
+*/
+    .staff-photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 300px;
+        width: 500px;
+    }
+    .staff-photo h1 {
+
+        width: 310px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+.staffbanner {
+        margin-top: 90px;
+    }
+
+
+
+    .container__content-staff {  
+      width: 34em;
+    }
+
+
+
+
+
+    /* End of 481px -----*/
+}
+
+
+
+/*
+Tablet and Large Phones
+-----------------------768px------------------768px----------------------------
+-------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 691px) and (max-width: 768px),
+only screen and (min-device-width: 691px) and (max-device-width: 768px) {
+
+    .container {
+        height: 100%;
+       max-width: 90em;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+
+    p {
+        font-size: 24px;
+    }
+    .light {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    body {
+
+        /*        background-color: #a8c2d8;*/
+        width: 90em;
+
+
+
+    }
+    footer {
+
+        padding: 10px 0 0 0px;
+
+    }
+    .logo {
+        width: 195px;
+        height: 70px;
+    }
+
+    #mobile-logo {
+        display: none;
+    }
+    .top,
+    .circle,
+    .dropdown,
+    .serviceimage,
+    .staffimage {
+        display: none;
+    }
+    
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+       flex-shrink: 5px;
+        font-size: .75em;
+        margin: 0;
+        
+    }
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+        flex-shrink: 5px;
+    }
+    li a {
+        
+        width: 3.3em;
+    }
+  
+   
+    #yourself {
+        margin: 60px 0 0 0;
+        text-align: center;
+    }
+    .homecontainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        width: 40em;
+
+    }
+
+    .client {
+        
+        margin-top: 50px;
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    .homebanner {
+        max-width: 285px;
+        max-height: 285px;
+
+    }
+    .title,
+    .subtitle {
+        font-size: 24px;
+        border: none;
+
+        margin: 0;
+        line-height: 1.5em;
+        width: 200px;
+        height: 200px;
+
+
+
+
+    }
+
+    .subbelow1 {
+        max-width: 35em;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        
+    }
+    .inner2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        height: 200px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+
+    }
+    .inner1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0;
+        height: 60em;
+    }
+
+    .inner2-col {
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 10px;
+        margin: 0;
+
+
+
+    }
+
+    .let {
+        font-size: 2.4em;
+        margin: 30px 0;
+        
+    }
+    #visit {
+        width: 600px;
+        font-size: 2.1em;
+    }
+    
+
+    .container__content-blurred {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        margin: 0;
+        font-size: 20px;
+        min-height: 600px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 72em;
+
+
+    }
+    
+    .benefits {
+        min-height: 28em;
+        
+    }
+    .staffimage,
+    .serviceimage {
+
+        margin: 0 20px 90px 20px;
+    }
+
+
+    #btnprivacy {
+        width: 200px;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        height: 45px;
+        margin: 0 10px 10px 0;
+        
+    }
+    .subscribe {
+        
+        width: 190px;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        height: 35px;
+        margin: 0 10px 10px 0;
+    }
+
+    #benefits-title {
+        margin: 30px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .leftfooter {
+    
+        width: 24em;
+        font-size: large;
+    }
+    .rightfooter {
+    
+        font-size: 1.5em;
+        line-height: .8em;
+    }
+
+
+    .popup-container {
+
+        width: 90%;
+    }
+
+
+    .pop-footer {
+        padding-bottom: 50px;
+    }
+    #emailsub {
+        width: 300px;
+    }
+
+    .modal-content {
+        width: 80%;
+
+    }
+    /* 
+-------------------------------------------------------------------------------
+                                          Contact Page 
+*/
+    .container__content {
+        height: 100%;
+        max-width: 90em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+    .contact__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+       
+
+    }
+    p {
+        font-size: 24px;
+    }
+
+    .in-touch {
+        width: 100%;
+        font-size: 20px;
+
+    }
+    .contactsbanner {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 40px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    address {
+        font-size: 24px;
+        width: 500px;
+        height: 800px;
+    }
+    .contact-info-container {
+        width: 450px;
+
+        padding: 0 30px;
+        margin-right: 0;
+
+    }
+
+    .contact-info {
+        width: 400px;
+    }
+
+    #contact-form {
+        width: 450px;
+        padding: 32px;
+
+    }
+
+    /* 
+-------------------------------------------------------------------------------
+                                          Services Page 
+*/
+    .container__content-services {
+        width: 90em;
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+         height: 100%;
+        
+        
+        
+
+    }
+    .subbelow1-service {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        
+        
+    
+        
+
+    }
+    
+    .subcol3,
+    .subcol1 {
+        display: none;
+    }
+
+    .servicebanner p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 26px;
+        line-height: 1em;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        
+        
+    }
+
+
+    
+    .subcol2-services {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0;
+        
+    
+        
+        
+        
+    }
+
+
+
+
+    /* 
+-------------------------------------------------------------------------------
+                                          Staff Page 
+*/
+    .staff-photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 350px;
+        width: 500px;
+       
+    }
+    .staff-photo h1 {
+
+        width: 310px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+
+
+
+
+    .container__content-staff {  
+      width: auto;
+        
+    }
+
+
+
+
+
+    /* End of 481px */
+}
+
+
+
+
+
+
+/*
+Tablet and Large Phones
+-----------------------1030px------------------1030px--------------------------
+-------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 769px) and (max-width: 1030px),
+only screen and (min-device-width: 769px) and (max-device-width: 1030px) {
+
+
+
+    footer {
+         width: 90em;
+    }
+    body {
+        width: 90em
+     
+    
+        
+    
+    }
+    .container {
+        width: 90em;
+    }
+    .introduction {
+        
+    }
+
+    .container__content-blurred {
+
+        max-width: 90em;
+        height: auto;
+    
+    }
+
+    .container__content {
+         width: 90em;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .container__content-staff {
+        max-width: 80em;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .contact-info-container {
+        width: 500px;
+        padding: 0 30px;
+        margin-right: 0;
+
+    }
+    .container__content-services {
+        max-width: 90em;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-self: flex-start;
+         max-width: 60em
+       flex-shrink: 5px;
+    }
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    
+         max-width: 60em;
+        flex-shrink: 5px;
+    }
+    li a {
+        width: 3.2em;
+    }
+    
+    /*    ------Home-------    */
+    .subbelow1 {
+        max-width: 60em;
+
+    }
+    
+    .top {
+        display: none;
+    }
+
+    .popup-container {
+
+        width: 90%;
+    }
+
+
+    .pop-footer {
+        padding-bottom: 50px;
+    }
+    #emailsub {
+        width: 300px;
+    }
+
+    .modal-content {
+        width: 80%;
+
+    }
+    
+    /*    ------Contact-------    */
+
+    .contact-info {
+        width: 500px;
+    
+    }
+
+    #contact-form {
+        width: 500px;
+        padding:0 32px;
+        
+    }
+    .contact-info-container {
+        width: 500px;
+          
+        padding: 0 30px;
+        margin: 0 0 90px 0;
+
+    }
+ /*    ------Staff-------    */
+
+    .staffbanner {
+        margin-top: 70px;
+    }
+
+    .staff-photo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 300px;
+        width: 500px;
+    
+    }
+
+    .profiles p {
+        font-size: 25px;
+        line-height: 1.8em;
+    }
+
+
+
+
+}

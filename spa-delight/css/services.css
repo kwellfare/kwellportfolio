@@ -1,0 +1,208 @@
+
+
+
+.servicebanner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    border: none;
+
+}
+
+.room {
+ background: url(/spa-delight/images/roomfilter.jpg) no-repeat center left;
+    background-color: rgba(101, 72, 82, 0.42);
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    border-top: double 10px #afd2da;
+    border-bottom: double 10px #afd2da;
+    border-radius: 50%;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding: 20px 0;
+   
+    
+    background-size: cover;
+    
+}
+
+
+
+
+.servicetext {
+    width: 780px;
+    text-align: center;
+    line-height: 20px;
+    font-size:24px;
+    letter-spacing: 2px;
+}
+
+
+
+
+.servicebanner h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+.container__content-services {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    background-color: lightslategrey;
+    margin: 0px;
+    
+
+
+}
+.subbelow1-service {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    
+}
+
+.subbelow2 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.subcol2-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 54%;
+    margin: 0;
+    padding: 30px 0;
+    
+}
+
+.massage-image {
+    background: url(/spa-delight/images/man.jpg) no-repeat center;
+    width 100px;
+    height: 230px;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 1px black;
+    padding:0 10px;
+    
+    
+}
+
+.inner-services1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 400px
+}
+
+.inner-services1 p {
+    padding: 0 20px;
+}
+
+
+.inner-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    color: black letter-spacing: 1px;
+    line-height: 6px;
+    font-size: 14px;
+    font-style: normal;
+    padding: 0 100px;
+    text-transform: uppercase;
+}
+
+
+
+.card-content {
+    width: 145px;
+    height: 100px;
+    padding: 20px 0;
+    border: 20px solid #889fb2;
+    border-radius: 260px;
+    background-color: #b7e8d3;
+    margin: 10px;
+    color: #4a6c5d;
+   
+}
+
+.card-content h2 {
+    line-height: 0;
+    text-align: center;
+}
+
+.facial-image {
+    background: url(/spa-delight/images/mask.jpg) no-repeat center;
+    width 100px;
+    height: 230px;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 1px black;
+    padding: 0 10px;
+}
+
+.subcontainer-servicelist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px 0 #171819, 0 6px 20px 0 #171819;
+    padding: 0;
+    margin: 10px;
+    
+    
+}
+
+.subcontainer-servicelist p {
+    font-size: 22px;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.card-title {
+    padding: 10px 20px;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    font-variant-caps: all-small-caps;
+    z-index: 3;
+    
+}
+
+.length {
+    padding: 20px 20px 10px 20px;
+    width: 110px;
+    height: 5px;
+    z-index: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.price {
+    width: 140px;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    
+}
