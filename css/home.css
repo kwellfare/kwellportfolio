@@ -229,7 +229,7 @@ li {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
-.about {
+.mylinkssection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -276,6 +276,330 @@ li {
     word-spacing: normal;
     font-size: 24px;
 }
+
+.allaboutme_container {
+    padding: 2% 30%;
+}
+
+
+
+.speechbubble {
+    padding: 1px 35px;
+    margin-bottom: 18px;
+    margin-left: auto;
+  background-color: #ffffff;
+    width:75%;
+    font-size: 21px;
+    color: #1e1b2f;
+    border-radius: 50px;
+
+}
+.emphatic { 
+    color: rgb(23, 185, 191);
+    letter-spacing: 3px;
+    
+    
+}
+.speechbubblebg {
+    
+     -webkit-transition-timing-function: ease-in;
+     transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+     -webkit-animation-duration:1.5s;
+     animation-duration:1.5s;
+    animation: fadeInUp 1.5; 
+     -webkit-animation: fadeInUp 1.5s;
+ 
+
+   
+    width: 100%;
+    padding: 20px;
+    
+
+}
+.speechbubbleleft {
+    
+    padding: 10px 50px;
+    margin-bottom: 18px;
+    background-color: rgb(185, 98, 98);
+    border-radius: 20px;
+    width:100px;
+    font-size: 20px;
+    
+    
+}
+
+.skilltitle {
+    padding: 10px 40px;
+   text-align: center;
+ 
+    border: solid 1px rgb(185, 98, 98);
+    border-radius: 20px;
+    width:100px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.skilltag {
+    background-color: #ffffff;
+    border: 2px solid #4c2180;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color:rebeccapurple;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.skills li::before {
+    content: '+ ';
+    
+}
+
+
+
+.edubg {
+    background-color: rgb(185, 98, 98);
+    color: #2a1c40;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  
+    -webkit-box-orient: horizontal;
+  
+    -webkit-box-direction: normal;
+  
+    -ms-flex-direction: row;
+  
+    flex-direction: row;
+
+}
+
+.timeline {
+   position: relative;
+  max-width: 1200px;
+  margin: 0 auto; 
+    padding: 50px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #112d79;
+
+    
+    top: 0;
+    left: 0;
+     bottom: 0;
+    
+}
+
+
+
+.timeline ul li {
+    
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+    
+   border-radius:20px;
+    background-color: white;
+    width: 380px;
+    height:125px;
+    margin:0px auto;
+    padding: 15px 0 0 0;
+    position: relative;
+    list-style: none;
+   
+
+    
+}
+
+.edu time {
+    padding:0px 0px 0px 20px;
+    margin: auto;
+    font-size: 18px;
+    
+}
+.edu p {
+ 
+padding:0 0px 0 50px;
+    margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: -10%;
+     bottom:0;
+   
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+     width: 25px;
+    height: 25px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    z-index: 5;
+  
+}
+
+.timeline ul li ::before {
+    content: '';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+
+
+
+
+.edutitle h4 {
+   
+    padding: 10px 40px;
+   
+    border: solid 1px white;
+    border-radius: 20px;
+    width:100px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.edutitle {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 660px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+
+.uni { 
+    color: rgb(23, 185, 191);
+
+    font-weight: 900;
+  
+    
+}
+
+.myprocess_container {
+    padding: 2% 10%;
+}
+
+.myprocess {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+
+.myprocesstitle {
+    padding: 10px 40px;
+   
+    border: solid 1px white;
+    border-radius: 20px;
+    width:120px;
+    height: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.myprocess ul  {
+    
+display: -webkit-box;
+    
+display: -ms-flexbox;
+    
+display: flex;
+margin: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+.myprocess ul li {
+    margin: 0;
+    width: 185px;
+    padding: 20px;
+    list-style: none;
+    
+    
+}
+
+.even h4 {
+  background-color: darkslateblue;
+    color:rgb(23, 185, 191);
+    
+    padding: 10px;
+    margin: 0;
+
+}
+
+.odd h4 {
+    background-color:rgb(23, 185, 191);
+    padding: 10px;
+    margin: 0;
+    color: darkslateblue;
+}
+
+.odd  {
+     
+      background-color: rgb(59, 60, 60);
+
+}
+
+.even {
+   background-color:rgb(36, 45, 46); 
+    
+}
+
+.odd p {
+    color: rgb(207, 214, 214);
+    margin: 5px;
+    
+    
+}
+
+.even p {
+    color: rgb(207, 214, 214);
+    margin: 5px;
+}
+
+
 
 #polling {
      display: -webkit-box;
@@ -537,6 +861,21 @@ div.project-item {
     padding: 40px;
     margin-top: 10px;
 
+}
+
+
+.wframepho {
+    width:100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .nrh-indepth p {

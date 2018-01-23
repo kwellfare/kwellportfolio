@@ -380,7 +380,7 @@ only screen and (min-device-width: 481px) and (max-device-width: 690px) {
     .contact-info-container {
         width: 450px;
 
-        padding: 0 30px;
+    
         margin-right: 0;
 
     }
@@ -391,7 +391,7 @@ only screen and (min-device-width: 481px) and (max-device-width: 690px) {
 
     #contact-form {
         width: 450px;
-        padding: 32px;
+    
 
     }
 

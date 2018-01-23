@@ -131,16 +131,16 @@
 }
 .profiles {
     width: 654px;
-    padding: 0 0px;
+    padding: 40px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: justify;
     color: #2b343c;
-    text-align-last: justify;
+    
 
     border-top: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .profiles p {
@@ -263,5 +263,11 @@ tbody td {
     
 
     
+    
+}
+
+iframe {
+    width: 1000px;
+    height: 800px;
     
 }
