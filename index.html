@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Karen's Portfolio</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="css/home.css">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="css/home-small.css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
-     <meta name="Description" content="A showcase of Karen's web development projects including node.js web application and a small business responsive website.">
+    <meta name="Description" content="A showcase of Karen's web development projects including node.js web application and a small business responsive website.">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/kwfavicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
     <script>
         // Asynchronously load non-critical css 
@@ -24,6 +29,7 @@
         }
         // load css file async
         loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
     </script>
 
 </head>
@@ -32,9 +38,9 @@
 
 
 
-    <div class="top">
+    <div class="hero topkw">
 
-        <div class="intro">
+        <div class="introkw">
             <nav>
 
                 <div class="logo"> </div>
@@ -60,7 +66,7 @@
 
                         <ul class="fa-ul">
                             <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>
-                                
+
                                 <a class="links" href="http://www.google.com/recaptcha/mailhide/d?k=01WKzMCYrn90x_V0OG7XxGNQ==&amp;c=KrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01WKzMCYrn90x_V0OG7XxGNQ\x3d\x3d\x26c\x3dKrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Email Me</a>
 
                             </li>
@@ -78,128 +84,134 @@
 
         </div>
 
-
     </div>
-<!--  End of Intro  -->
+    
+    <!--  End of Intro  -->
     <div class="allaboutme_container">
-        
-    <div class="speechbubblebg">
-    <h3 class="speechbubbleleft">About Me?</h3>
-        <div class="speechbubble">
-            <p>As a kid I loved putting together <span class="emphatic">puzzles</span>. As an adult I enjoy puzzling together <span class="emphatic">pieces of code</span> to build wonderful web applications.</p>
+
+        <div class="speechbubblebg">
+            <h3 class="speechbubbleleft">About Me?</h3>
+            <div class="speechbubble">
+                <p>As a kid I loved putting together <span class="emphatic">puzzles</span>. As an adult I enjoy puzzling together <span class="emphatic">pieces of code</span> to build wonderful web applications.</p>
+            </div>
+            <div class="speechbubble">
+                <p>When not creating <span class="emphatic">digital projects</span>, you will find me attempting to watercolor, watching scfi or at the beach.</p>
+            </div>
+
         </div>
-        <div class="speechbubble">
-            <p>When not creating <span class="emphatic">digital projects</span>, you will find me attempting to watercolor, watching scfi or at the beach.</p>
-        </div>
-    
     </div>
-    </div>
-    
+ 
     <div class="edubg">
-        
-       <div class="edutitle"><h4>Education</h4>
-    </div>
-        
-        
-        <div>
-   
-          <section class="timeline">
-        
-            <ul class="snhu">
-               <li> <div class="edu"><time>2014 &#45; 2017</time>
-                   <br>
-                   <p class="uni">SOUTHERN NEW HAMPSHIRE UNIVERSITY</p>
-                <p> M.S. Information Technology</p>
-                <p>Web Design &amp; Development    
-        </p>
-        <p>GPA: 3.97 &#124; 4.0 </p>
-                </div>
-                </li>
-            </ul>
-        
-            
-            <ul class="su">
-            <li>
-                <div class="edu">
-                <time>2008 &#45; 2011</time> 
-                    <br>
-                <p class="uni"> SALISBURY UNIVERSITY</p>
-                <p> B.A. Communication Arts</p>
-                <p>PR </p>
-        <p>Business Writing Minor</p>
-                </div>
-                </li>
-            </ul>
-            
-    
-            
-            </section> 
+  <div class="edu_container">
+        <div class="edutitle">
+            <h4>Education</h4>
         </div>
-           
-        
-           
+
+
+        <div>
+
+            <section class="timeline">
+
+                <ul class="snhu">
+                    <li>
+                        <div class="edu"><time>2014 &#45; 2017</time>
+                            <br>
+                            <p class="uni">SOUTHERN NEW HAMPSHIRE UNIVERSITY</p>
+                            <p> M.S. Information Technology</p>
+                            <p>Web Design &amp; Development
+                            </p>
+                            <p>GPA: 3.97 &#124; 4.0 </p>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="su">
+                    <li>
+                        <div class="edu">
+                            <time>2008 &#45; 2011</time>
+                            <br>
+                            <p class="uni"> SALISBURY UNIVERSITY</p>
+                            <p> B.A. Communication Arts</p>
+                            <p>PR </p>
+                            <p>Business Writing Minor</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </section>
+        </div>
+
+
+
+    </div>
     </div>
     <div class="allaboutme_container">
-    <h3 class="skilltitle">Skill Set</h3>
+        <h3 class="skilltitle">Skill Set</h3>
         <ul class="skills">
-        <li class="skilltag">HTML</li>
-        <li class="skilltag">CSS</li>
-        <li class="skilltag">JavaScript</li>
-        <li class="skilltag">UX Design</li>
-        <li class="skilltag">Bootstrap</li>
-        <li class="skilltag">MongoDB</li>
-        <li class="skilltag">SQL</li>
+            <li class="skilltag">HTML</li>
+            <li class="skilltag">CSS</li>
+            <li class="skilltag">JavaScript</li>
+            <li class="skilltag">UX Design</li>
+            <li class="skilltag">Bootstrap</li>
+            <li class="skilltag">MongoDB</li>
+            <li class="skilltag">SQL</li>
         </ul>
-    <h3 class="skilltitle">Software</h3>    
+        <h3 class="skilltitle">Software</h3>
         <ul class="skills">
-        <li class="skilltag">Git</li>
-        <li class="skilltag">Adobe Photoshop</li>
-        <li class="skilltag">Adobe Illustrator</li>
-        <li class="skilltag">Project Professional</li>
-        <li class="skilltag">Visual Studio 2017</li>
-    </ul>
-        
-       </div> 
-        
-        <br>
-    <section class="myprocess_container">
-    <h3 class="myprocesstitle">My Process</h3>
-    <div class="myprocess">
+            <li class="skilltag">Git</li>
+            <li class="skilltag">Adobe Photoshop</li>
+            <li class="skilltag">Adobe Illustrator</li>
+            <li class="skilltag">Project Professional</li>
+            <li class="skilltag">Visual Studio 2017</li>
+        </ul>
 
-        <ul>
-            <li class="odd">
-        <h4>Investigation</h4>
-          
-        <p> Before concept creation occurs I try to develop a greater understanding of the environment, audience, resources and potential opportunities related to the project. </p>
-            </li>
-            <li class="even">
-        <h4>Analysis &amp; Planning</h4>
-                <p>Requirements and goals are formulated.</p> 
-                <p>At this point user cases enhance the discovery of user needs.</p>
-                <p>The types of technologies to use for building the project are explored.</p>
-                <p>A project timeline is mapped out.</p>
-            </li>
-            <li class="odd">
-        <h4>Design</h4>
-        <p>Wireframes and Prototypes are created and tested.</p>
-            </li>
-            <li class="even">
-        <h4>Development &amp; Testing</h4>
-        <p> The functional website application is created following standards and best practices.</p><p> A continual cycle of development and testing is done.</p><p> Checks for cross-browser and device compatibility, and valid code are made. </p>
-            </li>
-            <li class="odd">
-        <h4>Launch</h4>
-        <p>The website goes through final optimization and then is pushed to a live state.</p><p> Any additional maintenance and refinement will be done going forward. </p>
-            </li>
-        </ul>
     </div>
-        </section>
-    
-        
-    
-<!-- Portfolio  -->
-    
-    
+
+    <br>
+    <section class="myprocess_container">
+        <h3 class="myprocesstitle">My Process</h3>
+        <div class="myprocess">
+
+            <ul>
+                <li class="odd">
+                    <h4>Investigation</h4>
+
+                    <p> Before concept creation occurs I try to develop a greater understanding of the environment, audience, resources and potential opportunities related to the project. </p>
+                </li>
+                <li class="even">
+                    <h4>Analysis &amp; Planning</h4>
+                    <p>Requirements and goals are formulated.</p>
+                    <p>At this point user cases enhance the discovery of user needs.</p>
+                    <p>The types of technologies to use for building the project are explored.</p>
+                    <p>A project timeline is mapped out.</p>
+                </li>
+                <li class="odd">
+                    <h4>Design</h4>
+                    <p>Wireframes and Prototypes are created. These are then tested on usability, functionality and whether they meet all requirements or goals established.</p>
+                </li>
+                <li class="even">
+                    <h4>Development &amp; Testing</h4>
+                    <p> The functional website application is created following standards and best practices.</p>
+                    <p> A continual cycle of development and testing is done.</p>
+                    <p> Checks for cross-browser and device compatibility, and valid code are made. </p>
+                </li>
+                <li class="odd">
+                    <h4>Launch</h4>
+                    <p>The website goes through final optimization and then is pushed to a live state.</p>
+                    <p> Any additional maintenance and refinement will be done going forward. </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio  -->
+
+
     <div class="below">
         <div class="borderline"></div>
 
@@ -207,15 +219,15 @@
 
 
         <div id="project-list">
-            <h2> Portfolio Projects</h2>
+            <h2> Portfolio</h2>
 
 
             <button class="project"><i class="fa fa-caret-down pull-left"aria-hidden="true"></i> &nbsp;Polling Web Application</button>
             <div class="project-item">
                 <h1 class="proj-title">New Resident Hub</h1>
                 <div id="polling">
-                <figure id="t-nrhub"> </figure>
-                <figure id="b-nrhub"> </figure>
+                    <figure id="t-nrhub"> </figure>
+                    <figure id="b-nrhub"> </figure>
                 </div>
 
                 <div class="button-grp">
@@ -280,6 +292,111 @@
 
     </div>
 
+    <!--    Portfolio rework-->
+    <div class="portfolio_wrapper is-hidden-mobile">
+        
+        <div class="portfolioitems">
+            
+       <div class="p1">
+                <div class="itemcontent">
+                    <h1>New Resident Hub</h1>
+
+                
+            
+                   
+                    <p class="itemdescription">Website that polls local residents on the quality of businesses in the area.
+                        <br><br> Built with Meteor, MongoDB, Node.js, Blaze, Bootstrap, HTML, CSS &amp; Javascript
+                    </p>
+                    <div class="button-grp">
+                    <a href="http://newresidenthub.xyz" target="_blank"><button class="inside">Demo</button></a>
+                    <a href="https://github.com/kwellfare/NRHub-App"><button class="inside">Code</button></a>
+                </div>
+           </div>
+            </div>
+    
+      <div class="p2">
+                
+                 <div id="polling">
+                    <figure id="t-nrhub"> </figure>
+                     <figure id="b-nrhub"> </figure>
+                    
+                </div>
+            </div>
+    
+       <div class="p3">
+                <div class="itemcontent">
+                
+                <h3>Project Choice</h3>
+                <p>Users of local services would be able to vote on recommending multiple businesses by answering three quesions according to their personal experience. New residents would use the voting scores to make a quick and more informed decision for a business for their needs. </p>
+                <p> The application utilized real time updates to avoid additional page loads. Resulting in an improved user experience. Showing instant results from the database update from other user interactions is also likely to boost engagement. It reinforces the idea that a visitor should get involved in the interaction too.</p>
+                </div>
+            </div>
+    
+        <div class="p4">
+                <div class="itemcontent">
+                <h3>Creating the New Resident Hub</h3>
+                <p>
+                    Creating the project was a valuable experience because it provided some hands-on experience on building with node.js. I specifically chose to develop the project to learn a bit more about the full-stack process. Being able to understand the process will ultimately lead to a better constructed project.</p>
+                <p>On designing the site, I was able to get more comfortable with learning how to handle the interactions that occurred in the database. I also learned a great deal about the technologies used to create a web application with node.js. Command line basics was another new skill picked up while setting up a testing environment. I also took time to familiarize myself with the Meteor Framework, MongoDB, Git, the NPM package manager and Blaze templates.
+                </p>
+</div>
+            </div>
+    
+        </div>
+    </div>
+
+<div class="between"> </div>
+<!--2ndproj-->
+    <div class="portfolio_wrapper">
+        <div class="portfolioitems">
+       <div class="p1">
+                <div class="itemcontent">
+                <div>
+                    <h1>Spa Delight</h1>
+
+                </div>
+    
+                   <p class="itemdescription">Website for a massage and facial spa. Features a contact form to increase communication to potential clients. It's a simple, clean and responsive design.<br><br> Built with HTML, CSS &amp; Javascript</p>
+
+                    
+                     <div class="button-grp">
+                    <a href="spa-delight/index.html" target="_blank"><button class="inside">Demo</button></a>
+                    <a href="https://github.com/kwellfare/kwellportfolio/tree/master/spa-delight"><button class="inside">Code</button></a>
+                </div>
+                
+           </div>
+            </div>
+          <div class="p2">
+                
+                 <div id="spa">
+                    <figure id="m-spa"> </figure>
+                    <figure id="w-spa"> </figure>
+                </div>
+        
+            
+            </div>
+           <div class="p3">
+                <div class="itemcontent">
+                
+                <h3>Project Choice</h3>
+                <p></p>
+                </div>
+            </div>
+           <div class="p4">
+                <div class="itemcontent">
+                <h3>Creating Spa Delight</h3>
+                <p>
+                    
+                </p>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <script src="js/script.js"></script>
 
     <footer>
@@ -288,5 +405,7 @@
         </div>
 
     </footer>
+    
 </body>
+
 </html>
