@@ -1,27 +1,39 @@
 /* Media Queries */
 
-@media only screen and (max-width: 600px)
-{
-    .body {
-     margin: 32px;
-     padding: 0;
-        display: block;
-      
-    }
-    .site_wrapper {
-       
+@media screen and (max-width: 768px) {
+    body {
+   width: 100%;
+    
+min-width: 320px;
+      display: -webkit-box;
+    
 
-       
-        
-    padding: 0;
-        
-       
+      display: -ms-flexbox;
+    
+
+      display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    
     }
+    
     html {
-         clear: both;
+         
     }
    
-    .topkw {
+    .topkw, .introkw {
+        min-height: 500px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        padding:0;
+        margin: 0;
         width: 100%;
        
         
@@ -41,40 +53,45 @@
     .allaboutme_container {
        
         padding: 0;
-        margin:0 auto;
+        margin:0;
      
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
 
 
-
-
+    }
+    
+    .speechbubbleleft {
+       width: 70%;
+        font-size: 20px; 
+        padding: 5px 5px;
+        text-align: center;
     }
 
     .speechbubble {
-
-        min-width: 250px;
+       padding:12px 30px;
+        width: 100%;
+        font-size: 20px;
+        
+        
 
     }
 
-
+    .edu_container {
+        padding: inherit;
+    }
     .edutitle h4 {
 
-        padding: 10px 0px;
+        padding: 0;
 
-        border: solid 1px white;
-        border-radius: 20px;
-        width: auto;
-        height: 25px;
+       
+        background-color: rgb(185, 98, 98);
+      
+        width: 150px;
+        height: 40px;
         font-size: 20px;
         color: white;
         z-index: 3;
+        
     }
 
     .edutitle {
@@ -93,17 +110,19 @@
         text-align: center;
         z-index: 3;
         position: relative;
-        left: 100px;
+        left:22%;
         margin-top: -25%;
+        height: 60px
 
 
     }
 
     .edubg {
 
-        padding: 80px 0;
+        padding: 0px 0;
         width: 100%;
         margin: 0;
+    
 
     }
 
@@ -120,16 +139,51 @@
         -ms-flex-pack: start;
         justify-content: flex-start;
         width: auto;
+        height: auto;
         padding: 0;
         right: 20%;
-
     }
+   
+    
     .timeline ul li {
-        width: 300px;
-        height: auto;
-        margin: auto;
-
+       min-width: 310px;
+        padding:inherit;
     }
+    
+    .skilltitle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        
+    }
+    .skilltag {
+          width: 80%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    
+    .myprocess ol li {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+
+}
 
     .portfolio_wrapper,
     .portfolioitems, .p1, .p2, .p3, .p4 {
@@ -186,6 +240,8 @@
         width: 300px;
 
     }
+    
+    
 
 
     #t-nrhub {

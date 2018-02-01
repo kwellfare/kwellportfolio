@@ -1,5 +1,5 @@
 html {
-   
+   width: auto;
 margin: 0;
 
 
@@ -8,28 +8,21 @@ margin: 0;
 
 body {
     
- display: block;
-width: 100%;
-
+ 
+width: auto;
+margin: 0;
     padding:0;
-
-background-color: #18183b;
-    margin: 32px;
-
-
-
-
-}
-
-.site_wrapper {
-    width: 100vw;
-    height: 100%;
-    margin: auto;
-   
-    color: white;
+color: white;
     font-family: 'Open Sans', Helvitica, Ariel, sans-serif;
-    padding: 0;
+background-color: #18183b;
+  
+
+
+
+
 }
+
+
 
 footer {
     height: 60px;
@@ -85,6 +78,7 @@ nav {
     flex-direction: row;
     margin: 0px;
     padding: 0px;
+    
     width: auto;
     
 
@@ -109,7 +103,8 @@ nav {
 }
 
 #hello {
-    padding-top: 10px;
+
+    padding: 1.5rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151,9 +146,9 @@ nav {
     background-position: center;
     width: 100%;
     
-    height: 500px;
+    height: 600px;
     background-size: cover;
- 
+ padding: 0;
     margin: 0;
     -webkit-transition-timing-function: ease-in 1;
     transition-timing-function: ease-in 1;
@@ -192,7 +187,7 @@ li {
     background: rgba(76, 64, 216, 0.46);
     margin: 0;
     width: 100%;
-    height: 500px;
+    height: 600px;
     
 
     
@@ -202,28 +197,15 @@ li {
 }
 
 .logo {
-
-    background-image: url(/images/logokwel.png);
+background-image: url(/images/logokwel.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: contain;
     width: 100px;
-    height: 60px;
-    padding: 0px;
-
-
-    -webkit-transition-timing-function: ease-in;
-
-
-    transition-timing-function: ease-in;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    animation: fadeInUp 1.5;
-    -webkit-animation: fadeInUp 1.5s;
-
+    height: 50px;
+    padding: 0;
 }
+
 
 .below {
     display: -webkit-box;
@@ -262,6 +244,7 @@ li {
     justify-content: center;
     z-index: 1;
     color: white;
+    padding: 2rem 0;
 }
 
 .myphoto {
@@ -301,7 +284,7 @@ li {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 2rem;
 }
 
 .dev {
@@ -323,7 +306,11 @@ li {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0;
+   
 
 
 }
@@ -343,14 +330,14 @@ li {
 
 
 .speechbubble {
-    padding: 1px 35px;
+    padding: 30px 35px;
     margin-bottom: 18px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
-    width: 30%;
+    width: 45%;
     min-width: 300px;
-    font-size: 21px;
+    font-size: 24px;
     color: #1e1b2f;
     border-radius: 50px;
 
@@ -366,15 +353,7 @@ li {
 
 .speechbubblebg {
 
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    animation: fadeInUp 1.5;
-    -webkit-animation: fadeInUp 1.5s;
-
+   
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -401,27 +380,33 @@ li {
 
 .speechbubbleleft {
 
-    padding: 10px 50px;
+    padding: 15px 50px;
     margin-bottom: 18px;
     background-color: rgb(185, 98, 98);
     border-radius: 20px;
-    width: 100px;
-    font-size: 20px;
+    width: auto;
+    color: #fff;
     margin-right: 30%;
+    
+    
 
 
 }
 
 .skilltitle {
-    padding: 10px 40px;
+   padding: 10px;
+        width: 300px;
     text-align: center;
-
+  
+   margin: auto;
     border: solid 1px rgb(185, 98, 98);
     border-radius: 20px;
-    width: 100px;
-    height: 25px;
-    font-size: 20px;
+    
+     
+
     color: white;
+    
+    
 }
 
 .skills {
@@ -437,6 +422,10 @@ li {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
+    padding: inherit;
+    width: 100%
+       
+    
 
 }
 
@@ -446,10 +435,23 @@ li {
     border-radius: 10px;
     padding: 15px 20px;
     color: rebeccapurple;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     text-align: center;
-    margin: 5px;
+    margin: 1%;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+
+    display: -webkit-box;
+   
+    display: -ms-flexbox;
+   
+    display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+    
+
 }
 
 .skills li {
@@ -474,6 +476,7 @@ li {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    padding: 50px 0;
     -webkit-box-orient: horizontal;
 
     -webkit-box-direction: normal;
@@ -490,17 +493,19 @@ li {
 
 .timeline {
     position: relative;
-    max-width: 1200px;
+    width: auto;
 
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .timeline::after {
-    content: '';
+    content: " ";
     position: absolute;
     width: 6px;
-    background-color: #112d79;
+    
+    margin: -10.5%;
+    background-color: #18183b;
 
 
     top: 0;
@@ -522,10 +527,10 @@ li {
 
     border-radius: 20px;
     background-color: white;
-    width: 380px;
-    height: 125px;
-    margin: 0px 0;
-    padding: 15px 0 0 0;
+    width: auto;
+    height: auto;
+    margin: 30px 0;
+    padding: 10px 8px 0 0;
     position: relative;
     list-style: none;
 
@@ -534,16 +539,17 @@ li {
 }
 
 .edu time {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 50px;
     margin: auto;
-    font-size: 18px;
+    
+   
 
 }
 
 .edu p {
 
-    padding: 0 0px 0 50px;
-    margin: 0;
+    padding: 0 5px 0 50px;
+    margin-bottom: .35rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -553,16 +559,17 @@ li {
 .timeline ul li::after {
     content: '';
     position: absolute;
-    top: 12%;
+    top: 7%;
     left: -10%;
     bottom: 0;
 
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
-    width: 25px;
-    height: 25px;
-    background-color: blueviolet;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(23, 185, 191);
     border-radius: 50%;
+    border: 7px solid rgb(24, 24, 59);
     z-index: 5;
 
 }
@@ -585,34 +592,32 @@ li {
 
 .edutitle h4 {
 
-    padding: 10px 40px;
-
-    border: solid 1px white;
-    border-radius: 20px;
-    width: 100px;
-    height: 25px;
-    font-size: 20px;
+    padding: 15px 0px;
+    background-color: rgb(185, 98, 98);
+   
+    width:auto;
+    height: 70px;
+    
     color: white;
     z-index: 3;
 }
 
 .edutitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-
-    padding-right: 10px;
-    text-align: center;
+   
+    z-index: 3;
+        position: relative;
+        left:20%;
+        margin-top: -3.5%;
+        height: 50px
+        width:30px;
 }
 
 
 .uni {
-    color: rgb(23, 185, 191);
+    color: #17b9bf;
+    font-weight: 500;
 
-    font-weight: 900;
+   
 
 
 }
@@ -626,20 +631,34 @@ li {
     display: -ms-flexbox;
     display: flex;
 
+
 }
 
 .myprocesstitle {
-    padding: 10px 40px;
-
-    border: solid 1px white;
-    border-radius: 20px;
-    width: 120px;
-    height: 25px;
+   display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px;
+        width:auto;
+ background-color:transparent;
+     
+    margin: 0;
+    
+    border-radius: 0px;
+    
+  
     font-size: 20px;
-    color: white;
+    color: #c8c5d3;
+    
 }
 
-.myprocess ul {
+.myprocess ol {
 
     display: -webkit-box;
 
@@ -649,14 +668,19 @@ li {
     margin: auto;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
-.myprocess ul li {
+.myprocess ol li {
     margin: 0;
-    width: 50%;
+    width: 30%;
     padding: 20px;
     list-style: none;
+    flex-grow: .5;
+    
+    
 
 
 }
@@ -671,20 +695,20 @@ li {
 }
 
 .odd h4 {
-    background-color: rgb(23, 185, 191);
+    background-color: darkslateblue;
     padding: 10px;
     margin: 0;
-    color: darkslateblue;
+     color: rgb(23, 185, 191);
     text-align: center;
 }
 
-.myprocess ul li:nth-child(odd) {
+.myprocess ol li:nth-child(odd) {
 
     background-color: rgb(59, 60, 60);
 
 }
 
-.myprocess ul li:nth-child(even) {
+.myprocess ol li:nth-child(even) {
     background-color: rgb(36, 45, 46);
 
 }
@@ -851,20 +875,24 @@ li {
 }
 
 #project-list h2 {
+    padding: 5px 0px;
 
-    letter-spacing: 3px;
-    font-size: 25px;
+    border: solid 1px white;
+    border-radius: 20px;
+    width: 250px;
+    height: auto;
+    
     color: white;
+    letter-spacing: 2px;
+    
     margin: 0 0 20px 0;
-    background: rgba(55, 33, 128, 0.53);
-    border: 1px solid #999;
-    /* background: linear-gradient(to top, #6600cc 0%, #4c40d8 100%); 2nd Choice*/
-    padding: 10px 20px;
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
     border-radius: 20px;
+    justify-content: center;
 
 
 
@@ -878,10 +906,10 @@ li {
     padding: 18px;
     width: 350px;
     text-align: center;
-
+border-radius: 20px;
     border: 0;
     font-size: 22px;
-    margin: 2px 0;
+    margin: 10px 0;
 
 
 
@@ -897,6 +925,7 @@ button.project:hover {
     -webkit-transition-timing-function: ease-in-out 5s;
     transition-timing-function: ease-in-out 5s;
     overflow: hidden;
+    
 }
 
 .project-item {

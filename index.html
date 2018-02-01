@@ -3,34 +3,21 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Karen's Portfolio</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="css/home-small.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karen's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="styles/home-small.css" />
+     
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
     <meta name="Description" content="A showcase of Karen's web development projects including node.js web application and a small business responsive website.">
     <link rel="icon" type="image/png" sizes="16x16" href="images/kwfavicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="vendors/bulma/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
 
-    <script>
-        // Asynchronously load non-critical css 
-        function loadCSS(e, t, n) {
-            "use strict";
-            var i = window.document.createElement("link");
-            var o = t || window.document.getElementsByTagName("script")[0];
-            i.rel = "stylesheet";
-            i.href = e;
-            i.media = "only x";
-            o.parentNode.insertBefore(i, o);
-            setTimeout(function() {
-                i.media = n || "all"
-            })
-        }
-        // load css file async
-        loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-    </script>
+    
 
 </head>
 
@@ -38,25 +25,49 @@
 
 
 
-    <section class="section topkw">
+    <section class="section is-desktop topkw">
 
         <div class="is-overlay introkw">
-            <nav class="navbar is-light" role="navigation" aria-label="main-navigation">
-                <div class="navbar-brand">
-                <div class="navbar-item logo"> </div>
+            
+            <nav class="navbar is-primary" role="navigation" aria-label="main-navigation">
+                <div class="navbar-brand is-primary">
+                <div class="navbar-item logo ">
+                    
+                    </div>
+                    <div class="navbar-menu" id="navMenu">
+                
                 <a class="navbar-item heading" href="index.html"> Home </a>
-
-                <a class="navbar-item heading" href="#project-list"> Portfolio</a>
+                        
+              
+                        
+                <a class="navbar-item heading" href="#skills">Skills</a>
+                        
+                 <a class="navbar-item heading" href="#project-list"> Portfolio</a>
+                        
+                    </div>
+                
+                  
+                    <button class="button navbar-burger is-primary" data-target="navMenu">
+                       
+                    <span></span>
+                        <span></span>
+                        <span></span>
+                       
+                        
+                        
+                    </button>
                 </div>
             </nav>
-            <div class="container">
-                <div class="hero">
+            
+            <div class="hero">
+                <div class="hero-body">
+                    <div class="container">
                 <h1 id="hello">Hello!</h1>
                 <h1 id="name">I'm Karen Wellfare<br>
 
-                    <span class="dev"> A FrontEnd Web Developer</span></h1>
+                    <span class="dev"> A Software Developer</span></h1>
         </div>
-        </div>
+        
 
 
 
@@ -69,10 +80,10 @@
                         <ul class="fa-ul">
                             <li><i class="fa-li fa fa-envelope-o" aria-hidden="true"></i>
 
-                                <a class="links" href="http://www.google.com/recaptcha/mailhide/d?k=01WKzMCYrn90x_V0OG7XxGNQ==&amp;c=KrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01WKzMCYrn90x_V0OG7XxGNQ\x3d\x3d\x26c\x3dKrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Email Me</a>
+                                <a class="links is-size-5-touch is-size-4-desktop" href="http://www.google.com/recaptcha/mailhide/d?k=01WKzMCYrn90x_V0OG7XxGNQ==&amp;c=KrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01WKzMCYrn90x_V0OG7XxGNQ\x3d\x3d\x26c\x3dKrnwAePkCy938TBKek-KJArcB9Z9PAEhaQ0ofPyS7TE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Email Me</a>
 
                             </li>
-                            <li><i class="fa-li fa fa-github" aria-hidden="true"></i><a class="links" href="https://github.com/kwellfare" target="_blank">Github</a></li>
+                            <li><i class="fa-li fa fa-github" aria-hidden="true"></i><a class="links is-size-5-touch is-size-4-desktop" href="https://github.com/kwellfare" target="_blank">Github</a></li>
 
                         </ul>
 
@@ -82,47 +93,48 @@
 
 
 
-
-
-        </div>
+            </div>
+            </div>
+    
 
     </section>
     
     <!--  End of Intro  -->
-    <div class="allaboutme_container">
+    <section class="section is-touch is-desktop" id="about">
+    <div class="allaboutme_container container">
 
         <div class="speechbubblebg">
-            <h3 class="speechbubbleleft">About Me?</h3>
-            <div class="speechbubble">
+            <h3 class="speechbubbleleft is-size-4">About Me?</h3>
+            <div class="speechbubble card">
                 <p>As a kid I loved putting together <span class="emphatic">puzzles</span>. As an adult I enjoy puzzling together <span class="emphatic">pieces of code</span> to build wonderful web applications.</p>
             </div>
-            <div class="speechbubble">
+            <div class="speechbubble card">
                 <p>When not creating <span class="emphatic">digital projects</span>, you will find me attempting to watercolor, watching scfi or at the beach.</p>
             </div>
 
         </div>
     </div>
- 
-    <div class="edubg">
-  <div class="edu_container">
+    </section>
+    <section class="edubg section is-desktop" id="education">
+  <div class="edu_container container">
         <div class="edutitle">
-            <h4>Education</h4>
+            <h4 class="is-size-4">Education</h4>
         </div>
 
 
         <div>
 
-            <section class="timeline">
+            <div class="timeline">
 
                 <ul class="snhu">
                     <li>
-                        <div class="edu"><time>2014 &#45; 2017</time>
+                        <div class="edu"><time class="is-size-4">2014 &#45; 2017</time>
                             <br>
-                            <p class="uni">SOUTHERN NEW HAMPSHIRE UNIVERSITY</p>
-                            <p> M.S. Information Technology</p>
-                            <p>Web Design &amp; Development
+                            <p class="uni is-size-4 ">SOUTHERN NEW HAMPSHIRE UNIVERSITY</p>
+                            <p class="is-size-5"> M.S. Information Technology</p>
+                            <p class="is-size-5">Web Design &amp; Development
                             </p>
-                            <p>GPA: 3.97 &#124; 4.0 </p>
+                            <p class="is-size-5">GPA: 3.97 &#124; 4.0 </p>
                         </div>
                     </li>
                 </ul>
@@ -131,27 +143,32 @@
                 <ul class="su">
                     <li>
                         <div class="edu">
-                            <time>2008 &#45; 2011</time>
+                            <time class="is-size-4">2008 &#45; 2011</time>
                             <br>
-                            <p class="uni"> SALISBURY UNIVERSITY</p>
-                            <p> B.A. Communication Arts</p>
-                            <p>PR </p>
-                            <p>Business Writing Minor</p>
+                            <p class="uni is-size-4"> SALISBURY UNIVERSITY</p>
+                            <p class="is-size-5"> B.A. Communication Arts</p>
+                            <p class="is-size-5">PR </p>
+                            <p class="is-size-5">Business Writing Minor</p>
                         </div>
                     </li>
                 </ul>
 
 
 
-            </section>
+            </div>
         </div>
 
 
 
     </div>
-    </div>
+    </section>
+    <section class="section hero is-primary" id="skills">
+                    
     <div class="allaboutme_container">
-        <h3 class="skilltitle">Skill Set</h3>
+        <div class="hero">
+        <h3 class="skilltitle is-size-4">Skill Set</h3>
+        </div>
+        <div class="hero-body is-paddingless">
         <ul class="skills">
             <li class="skilltag">HTML</li>
             <li class="skilltag">CSS</li>
@@ -161,7 +178,12 @@
             <li class="skilltag">MongoDB</li>
             <li class="skilltag">SQL</li>
         </ul>
-        <h3 class="skilltitle">Software</h3>
+    </div>
+           <br>
+        <br>
+             <div class="hero">           
+        <h3 class="skilltitle is-size-4">Software</h3>
+                 <div class="hero-body is-paddingless">
         <ul class="skills">
             <li class="skilltag">Git</li>
             <li class="skilltag">Adobe Photoshop</li>
@@ -169,15 +191,17 @@
             <li class="skilltag">Project Professional</li>
             <li class="skilltag">Visual Studio 2017</li>
         </ul>
-
+                </div>
+        </div>   
     </div>
-
+    
+    </section>
     <br>
-    <section class="myprocess_container">
-        <h3 class="myprocesstitle">My Process</h3>
-        <div class="myprocess">
+    <section class="myprocess_container section" id="process">
+        <h3 class="myprocesstitle is-size-4">My Process</h3>
+        <div class="myprocess tile">
 
-            <ul>
+            <ol>
                 <li class="odd">
                     <h4>Investigation</h4>
 
@@ -205,7 +229,7 @@
                     <p>The website goes through final optimization and then is pushed to a live state.</p>
                     <p> Any additional maintenance and refinement will be done going forward. </p>
                 </li>
-            </ul>
+            </ol>
         </div>
     </section>
 
@@ -221,7 +245,7 @@
 
 
         <div id="project-list">
-            <h2> Portfolio</h2>
+            <h2 class="is-size-4"> Portfolio</h2>
 
 
             <button class="project"><i class="fa fa-caret-down pull-left"aria-hidden="true"></i> &nbsp;Polling Web Application</button>
@@ -399,7 +423,7 @@
 
 
 
-    <script src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
 
     <footer>
         <div class="credits">
