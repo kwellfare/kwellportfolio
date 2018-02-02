@@ -68,6 +68,7 @@ nav {
     margin: 0px;
     padding: 0px;
     width: auto;
+    z-index: 5;
 }
 
 
@@ -148,6 +149,7 @@ nav {
      min-width: 400px;
     height: 500px;
     padding: 0;
+    
 }
 
 
