@@ -1,192 +1,16 @@
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
-    body {
-   width: 100%;
-    
-min-width: 320px;
-      display: -webkit-box;
-    
-
-      display: -ms-flexbox;
-    
-
-      display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
-    
-    }
-    
-    html {
-         
-    }
-   
-    .topkw, .introkw {
-        min-height: 500px;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
-        padding:0;
-        margin: 0;
-        width: 100%;
-       
-        
-
-    }
-    #name {
-        font-size: 30px;
-    }
-
-    #hello {
-        font-size: 40px;
-    }
-    footer {
-        margin: 0px;
-
-    }
-    .allaboutme_container {
-       
-        padding: 0;
-        margin:0;
-     
-        width: 100%;
 
 
-    }
-    
-    .speechbubbleleft {
-       width: 70%;
-        font-size: 20px; 
-        padding: 5px 5px;
-        text-align: center;
-    }
 
-    .speechbubble {
-       padding:12px 30px;
-        width: 100%;
-        font-size: 20px;
-        
-        
-
-    }
-
-    .edu_container {
-        padding: inherit;
-    }
-    .edutitle h4 {
-
-        padding: 0;
-
-       
-        background-color: rgb(185, 98, 98);
-      
-        width: 150px;
-        height: 40px;
-        font-size: 20px;
-        color: white;
-        z-index: 3;
-        
-    }
-
-    .edutitle {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        width: auto;
-        padding-right: 0px;
-        text-align: center;
-        z-index: 3;
-        position: relative;
-        left:22%;
-        margin-top: -25%;
-        height: 60px
-
-
-    }
-
-    .edubg {
-
-        padding: 0px 0;
-        width: 100%;
-        margin: 0;
-    
-
-    }
-
-
-    .timeline {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        width: auto;
-        height: auto;
-        padding: 0;
-        right: 20%;
-    }
-   
-    
-    .timeline ul li {
-       min-width: 310px;
-        padding:inherit;
-    }
-    
-    .skilltitle {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 5px;
-        margin-bottom: 10px;
-        
-    }
-    .skilltag {
-          width: 80%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin: 0;
-    }
-    
-    
-    .myprocess ol li {
-    margin: 0;
-    width: 100%;
-    padding: 20px;
-    list-style: none;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-
-}
 
     .portfolio_wrapper,
-    .portfolioitems, .p1, .p2, .p3, .p4 {
+    .portfolioitems,
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
         display: none;
     }
 
@@ -217,7 +41,7 @@ display: flex;
     .introkw,
     .topkw {
         height: 400px;
-       
+
     }
     .project-item {
         width: 300px;
@@ -240,8 +64,8 @@ display: flex;
         width: 300px;
 
     }
-    
-    
+
+
 
 
     #t-nrhub {

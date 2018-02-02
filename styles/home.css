@@ -1,28 +1,17 @@
 html {
-   width: auto;
-margin: 0;
-
-
+    width: auto;
+    margin: 0 auto;
 }
-
 
 body {
-    
- 
-width: auto;
-margin: 0;
-    padding:0;
-color: white;
+    min-width: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
     font-family: 'Open Sans', Helvitica, Ariel, sans-serif;
-background-color: #18183b;
-  
-
-
-
-
+    background-color: #18183b;
 }
-
-
 
 footer {
     height: 60px;
@@ -78,10 +67,7 @@ nav {
     flex-direction: row;
     margin: 0px;
     padding: 0px;
-    
     width: auto;
-    
-
 }
 
 
@@ -115,19 +101,6 @@ nav {
     color: rgb(185, 98, 98);
     text-shadow: 2px 2px #072576;
     line-height: 30px;
-    font-size: 55px;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    animation: fadeInUp 1;
-    -webkit-animation: fadeInUp 1s;
-
-}
-
-#name {
     font-size: 40px;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
@@ -137,19 +110,62 @@ nav {
     animation-duration: 1s;
     animation: fadeInUp 1;
     -webkit-animation: fadeInUp 1s;
+
 }
+
+
+    @media screen and (min-width: 769px) {
+        #hello {
+        font-size: 55px;
+    }
+
+}
+
+#name {
+    font-size: 30px;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation: fadeInUp 1;
+    -webkit-animation: fadeInUp 1s;
+}
+
+
+    @media screen and (min-width: 769px) {
+        #name {
+        font-size: 40px;
+    }
+
+}
+
+.topkw,
+.introkw {
+    margin: 0;
+    width: 100%;
+     min-width: 400px;
+    height: 500px;
+    padding: 0;
+}
+
+
+    @media screen and (min-width: 769px) {
+        .topkw, .introkw {
+        min-height:600px;
+    }
+
+}
+
 
 .topkw {
 
     background-color: slategrey;
     background-image: url(/images/code-glow.jpg);
     background-position: center;
-    width: 100%;
-    
-    height: 600px;
     background-size: cover;
- padding: 0;
-    margin: 0;
+
     -webkit-transition-timing-function: ease-in 1;
     transition-timing-function: ease-in 1;
     -webkit-animation-fill-mode: both;
@@ -163,7 +179,9 @@ nav {
     /* Fading effect takes 1 second */
 }
 
-
+.introkw {
+    background: rgba(76, 64, 216, 0.46);
+}
 
 .links {
     text-decoration: none;
@@ -183,21 +201,9 @@ li {
     padding: 5px;
 }
 
-.introkw {
-    background: rgba(76, 64, 216, 0.46);
-    margin: 0;
-    width: 100%;
-    height: 600px;
-    
-
-    
-
-
-
-}
 
 .logo {
-background-image: url(/images/logokwel.png);
+    background-image: url(/images/logokwel.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -250,14 +256,21 @@ background-image: url(/images/logokwel.png);
 .myphoto {
     background: url(/images/karenw.jpg) no-repeat center;
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     border: white double 5px;
     border-radius: 50%;
     margin-right: 0px;
-
     z-index: 2;
     position: relative;
+}
+
+@media screen and (min-width: 769px) {
+        .myphoto {
+        width: 200px;
+    height: 200px;
+    }
+
 }
 
 .myphoto::after {
@@ -271,11 +284,7 @@ background-image: url(/images/logokwel.png);
     bottom: 0px;
     right: 0px;
     left: 0px;
-
-
 }
-
-
 
 .contact {
     display: -webkit-box;
@@ -310,10 +319,84 @@ background-image: url(/images/logokwel.png);
     -ms-flex-align: center;
     align-items: center;
     padding: 0;
-   
+    margin: 0;
+}
 
+
+.speechbubble {
+    padding: 12px 30px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 20px;
+    color: #1e1b2f;
+    border-radius: 50px;
+}
+
+
+    @media screen and (min-width: 769px) {
+        .speechbubble {
+            
+        padding: 30px 35px;
+        width: 45%;
+        min-width: 300px;
+        font-size: 24px;
+    }
 
 }
+
+.emphatic {
+    color: rgb(23, 185, 191);
+    letter-spacing: 3px;
+}
+
+.speechbubblebg {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.speechbubbleleft {
+
+    padding: 5px;
+    margin-bottom: 18px;
+    background-color: rgb(185, 98, 98);
+    border-radius: 20px;
+    width: 70%;
+    color: #fff;
+    margin-right: 30%;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+    @media screen and (min-width: 769px) {
+        .speechbubbleleft {
+        padding: 15px 50px;
+        width: auto;
+
+
+    }
+
+}
+
 
 .edu_container {
     display: -webkit-box;
@@ -323,147 +406,22 @@ background-image: url(/images/logokwel.png);
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-
-
-}
-
-
-
-.speechbubble {
-    padding: 30px 35px;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-    width: 45%;
-    min-width: 300px;
-    font-size: 24px;
-    color: #1e1b2f;
-    border-radius: 50px;
-
-
-}
-
-.emphatic {
-    color: rgb(23, 185, 191);
-    letter-spacing: 3px;
-
-
-}
-
-.speechbubblebg {
-
-   
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-
-    width: 100%;
-    padding: 20px 0;
-    margin: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-
-
-}
-
-.speechbubbleleft {
-
-    padding: 15px 50px;
-    margin-bottom: 18px;
-    background-color: rgb(185, 98, 98);
-    border-radius: 20px;
-    width: auto;
-    color: #fff;
-    margin-right: 30%;
-    
-    
-
-
-}
-
-.skilltitle {
-   padding: 10px;
-        width: 300px;
-    text-align: center;
-  
-   margin: auto;
-    border: solid 1px rgb(185, 98, 98);
-    border-radius: 20px;
-    
-     
-
-    color: white;
-    
-    
-}
-
-.skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
     padding: inherit;
-    width: 100%
-       
-    
+}
+
+
+    @media screen and (min-width: 769px) {
+        .edu_container {
+        padding:0;
+        
+    }
 
 }
 
-.skilltag {
-    background-color: #ffffff;
-    border: 2px solid #4c2180;
-    border-radius: 10px;
-    padding: 15px 20px;
-    color: rebeccapurple;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    margin: 1%;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
 
-    display: -webkit-box;
-   
-    display: -ms-flexbox;
-   
-    display: flex;
-   -ms-flex-wrap: wrap;
-   flex-wrap: wrap;
-    
 
-}
 
-.skills li {
-    position: relative;
-    z-index: 2;
 
-}
-
-.skills li::before {
-    content: '+ ';
-
-}
 
 
 
@@ -476,34 +434,65 @@ background-image: url(/images/logokwel.png);
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 50px 0;
+    padding: 0;
     -webkit-box-orient: horizontal;
-
     -webkit-box-direction: normal;
-
     -ms-flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
     flex-direction: row;
 
 
 }
 
+
+    @media screen and (min-width: 769px) {
+        .edubg {
+        
+        padding:50px 0;
+        margin:0;
+    }
+
+}
+
+
+
 .timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     position: relative;
     width: auto;
-
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0;
+    right: 20%;
 }
+
+
+    
+    @media screen and (min-width: 769px) {
+        .timeline {
+    display: block;
+    padding: 20px 0;
+    }
+}
+
+
+
 
 .timeline::after {
     content: " ";
     position: absolute;
     width: 6px;
-    
+
     margin: -10.5%;
     background-color: #18183b;
 
@@ -523,26 +512,37 @@ background-image: url(/images/logokwel.png);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-
     border-radius: 20px;
     background-color: white;
-    width: auto;
     height: auto;
-    margin: 30px 0;
-    padding: 10px 8px 0 0;
+    margin: 10px 0px;
     position: relative;
     list-style: none;
+    min-width: 250px;
+    padding: 0;
+    
+    
 
 
 
 }
 
+
+    
+    @media screen and (min-width: 769px) {
+        .timeline ul li {
+        padding: 10px 8px 0 0;
+        width: auto;
+            
+        
+    }
+}
+
 .edu time {
     padding: 0px 0px 0px 50px;
     margin: auto;
-    
-   
+
+
 
 }
 
@@ -591,36 +591,187 @@ background-image: url(/images/logokwel.png);
 
 
 .edutitle h4 {
-
-    padding: 15px 0px;
+    padding: 0;
     background-color: rgb(185, 98, 98);
-   
-    width:auto;
-    height: 70px;
-    
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
     color: white;
     z-index: 3;
+    
+
 }
 
+
+    @media screen and (min-width: 769px) {
+        .edutitle h4 {
+
+        padding: 15px 0px;
+        width: auto;
+        height: 40px;
+    }
+
+}
+
+
+
 .edutitle {
-   
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: auto;
+    padding-right: 0px;
+    text-align: center;
     z-index: 3;
-        position: relative;
-        left:20%;
-        margin-top: -3.5%;
-        height: 50px
-        width:30px;
+    position: relative;
+    left: 40%;
+    margin-top: -25%;
+    height: 60px;
+    
+}
+
+
+
+    @media screen and (min-width: 769px) {
+       .edutitle { 
+    left: 20%;
+    margin-top: -3.5%;
+    height: 50px;
+    width:30px;
+
+        
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+       .edutitle { 
+    left: 22%;
+    margin-top: -10%;
+    height: 40px;
+    width:auto;
+           
+
+        
+    }
+
 }
 
 
 .uni {
     color: #17b9bf;
     font-weight: 500;
+}
 
-   
+
+
+
+.skilltitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: solid 1px rgb(185, 98, 98);
+    border-radius: 20px;
+    color: white;
 
 
 }
+
+
+    @media screen and (min-width: 769px) {
+        .skilltitle {
+        display:block;
+        padding: 10px;
+        margin: auto;
+
+
+    }
+
+}
+
+.skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: inherit;
+    width: 100%
+}
+
+.skilltag {
+    background-color: #ffffff;
+    border: 2px solid #4c2180;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: rebeccapurple;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    width:100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+
+}
+
+
+    @media screen and (min-width: 425px) {
+        .skilltag {
+       margin: 1%;
+        width:auto;
+    }
+
+}
+
+.skills li {
+    position: relative;
+    z-index: 2;
+
+}
+
+.skills li::before {
+    content: '+ ';
+
+}
+
+
+
+
+
+
 
 .myprocess_container {
     padding: 2% 10%;
@@ -635,27 +786,27 @@ background-image: url(/images/logokwel.png);
 }
 
 .myprocesstitle {
-   display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 10px;
-        width:auto;
- background-color:transparent;
-     
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    width: auto;
+    background-color: transparent;
+
     margin: 0;
-    
+
     border-radius: 0px;
-    
-  
+
+
     font-size: 20px;
     color: #c8c5d3;
-    
+
 }
 
 .myprocess ol {
@@ -668,22 +819,41 @@ background-image: url(/images/logokwel.png);
     margin: auto;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    
+
 
 }
 
 .myprocess ol li {
     margin: 0;
-    width: 30%;
+    width: 100%;
     padding: 20px;
     list-style: none;
+    -webkit-box-flex: .5;
+    -ms-flex-positive: .5;
     flex-grow: .5;
-    
-    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+
 
 
 }
+
+
+    @media screen and (min-width: 769px) {
+        .myprocess ol li {
+   width:30%;
+
+        
+    }
+
+}
+
+
 
 .even h4 {
     background-color: darkslateblue;
@@ -698,7 +868,7 @@ background-image: url(/images/logokwel.png);
     background-color: darkslateblue;
     padding: 10px;
     margin: 0;
-     color: rgb(23, 185, 191);
+    color: rgb(23, 185, 191);
     text-align: center;
 }
 
@@ -726,38 +896,93 @@ background-image: url(/images/logokwel.png);
 }
 
 
+.portfoliotitle {
+    padding: 30px;
+    text-align: center;
+   
+}
+
+#polling,
+    #spa {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 300px;
+       
+
+    }
+
 
 #polling {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
 
-
-    position: relative;
     padding: 0;
 
 }
 
+
+@media screen and (min-width: 769px) {
+        #polling,
+    #spa  {
+ position: relative;
+
+        
+    }
+
+}
+
+
+
+
 #t-nrhub {
-    width: 500px;
-    height: 500px;
+    width: 254px;
+    height: 160px;
     background-image: url(/images/nrh.png);
 
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -ms-flex-item-align: start;
+   align-self: flex-start;
+    padding: 0;
 
 }
 
+@media screen and (min-width: 769px) {
+        #t-nrhub {
+ 
+width: 500px;
+    height: 350px;
+        
+    }
+
+}
+
+
 #b-nrhub {
 
-    width: 300px;
-    height: 365px;
+    display: none;
+
+}
+
+@media screen and (min-width: 769px) {
+        #b-nrhub {
+display: block;
+width: 300px;
+    height: 280px;
     background-image: url(/images/nrh-polls.png);
 
     background-repeat: no-repeat;
@@ -767,22 +992,14 @@ background-image: url(/images/logokwel.png);
     position: absolute;
     top: 23.8%;
     bottom: 0;
-    left: 70%;
+    left: 130%;
+        
+    }
 
 }
 
 #spa {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
 
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    position: relative;
     margin: 0;
     padding-bottom: 100px;
 
@@ -791,36 +1008,61 @@ background-image: url(/images/logokwel.png);
 
 }
 
+@media screen and (min-width: 769px) {
+    #spa {
+     padding-bottom: 0px;
+    }
+}
+
 #m-spa {
-    width: 250px;
-    height: 260px;
+    width: 254px;
+    height: 230px;
     background-image: url(/images/SDmobile.png);
 
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     z-index: 2;
-    position: absolute;
-    top: 25.5%;
-    bottom: 0;
-    left: 70%;
+    
+    -ms-flex-item-align: start;
+    
+    align-self: flex-start;
 
 
 
 }
 
-#w-spa {
-    width: 500px;
-    height: 270px;
-    background-image: url(/images/SDscreenshot-web.jpg);
+@media screen and (min-width: 769px) {
+    #m-spa {
+    position: absolute;
+    top: 25.5%;
+    bottom: 0;
+    left: 100%;
+    }
+}
 
+#w-spa {
+    display: none;
+
+
+}
+
+@media screen and (min-width: 769px) {
+    #w-spa {
+    width: 500px;
+    height: 300px;
+    background-image: url(/images/SDscreenshot-web.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     background-repeat: no-repeat;
     background-position: top;
-
     background-size: contain;
     margin: 0;
-
-
+    padding: 0;
+    }
 }
 
 .proj-title {
@@ -847,8 +1089,6 @@ background-image: url(/images/logokwel.png);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-
     padding: 10px;
     margin: 0;
 
@@ -871,6 +1111,7 @@ background-image: url(/images/logokwel.png);
     flex-direction: column;
     height: 100%;
     overflow: auto;
+     margin-bottom: 50px;
 
 }
 
@@ -881,17 +1122,19 @@ background-image: url(/images/logokwel.png);
     border-radius: 20px;
     width: 250px;
     height: auto;
-    
+
     color: white;
     letter-spacing: 2px;
-    
+
     margin: 0 0 20px 0;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
     border-radius: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 
@@ -899,14 +1142,14 @@ background-image: url(/images/logokwel.png);
 }
 
 .project {
-    /*   background-color: #6c6a6f; 2nd choice*/
+    
     background: rgba(76, 64, 216, 0.46);
 
     color: #ffffff;
     padding: 18px;
-    width: 350px;
+    width: 300px;
     text-align: center;
-border-radius: 20px;
+    border-radius: 20px;
     border: 0;
     font-size: 22px;
     margin: 10px 0;
@@ -925,7 +1168,7 @@ button.project:hover {
     -webkit-transition-timing-function: ease-in-out 5s;
     transition-timing-function: ease-in-out 5s;
     overflow: hidden;
-    
+
 }
 
 .project-item {
@@ -934,7 +1177,7 @@ button.project:hover {
     padding: 0 10px;
     background-color: rgba(55, 33, 128, 0.53);
     color: #c8c5d3;
-    width: 710px;
+    width: 300px;
     margin-bottom: 0px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
@@ -963,14 +1206,15 @@ button.project:hover {
     background-color: rgb(105, 98, 185);
     color: #ffffff;
     padding: 5px;
-    width: 300px;
     text-align: center;
     border: none;
     outline: none;
     margin-bottom: 20px;
     font-size: 20px;
     padding: 10px;
-    margin: 10px 10px;
+     margin: 5px 0;
+        width: 250px;
+    
 
 }
 
@@ -989,7 +1233,7 @@ footer {
 div.project-item {
     display: none;
     text-align: justify;
-    padding: 40px;
+    padding: 20px;
     -webkit-transition: max-height 0.2s ease-out;
     transition: max-height 0.2s ease-out;
 }
@@ -1157,19 +1401,23 @@ div.project-item {
     margin: 0px;
     width: auto;
     height: 500px;
+    min-width: 600px;
 }
 
 
-
+.nrh-container,
+    .nrh-indepth {
+        width: 400px;
+    }
 
 .nrh-indepth {
-    width: 700px;
     background-color: rgb(223, 221, 226);
     color: black;
     padding: 40px;
     margin-top: 10px;
 
 }
+
 
 
 .wframepho {
@@ -1238,4 +1486,3 @@ div.project-item {
     justify-content: center;
     padding: 5px;
 }
-
