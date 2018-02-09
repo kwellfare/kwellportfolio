@@ -94,7 +94,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin: 0 0 0 0px;
+    margin: 0;
     width: 650px;
     
 
@@ -124,7 +124,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left; 
-    margin: 0 0 0 0;
+    margin: 0;
     
     
     

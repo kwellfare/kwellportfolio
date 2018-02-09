@@ -81,7 +81,7 @@ if (message == "") {
 window.onload = function() {
     $("submit").onclick = processEntries;
     
-   
+    event.preventDefault();
     
     
    

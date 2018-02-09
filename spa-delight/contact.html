@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Spa Delight</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
     <link href="/spa-delight/css/spa.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="/spa-delight/css/small-device.css" />
-    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px) and (max-width: 1030px), only screen (min-device-width: 481px) and (max-device-width: 1030px)" href="/spa-delight/css/medium-device.css" />
-    <script src="/spa-delight/js/form.js"></script>
+      <link rel="stylesheet" type="text/css" media="screen and (max-width:691px)" href="/spa-delight/css/small-device.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:691px) and (max-width: 1023px)" href="/spa-delight/css/medium-device.css" />
+   
     <script>
         // Asynchronously load non-critical css 
         function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
@@ -67,7 +67,7 @@
                 </ul>
             </nav>
         
-        <span id="mobile-logo"> <h1 id="mobile-heading"><i class="fa fa-cloud" aria-hidden="true"></i>Spa Delight</h1></span>
+      <span id="mobile-logo"> <h1 id="mobile-heading" style="font-size: 20px;"><i class="fa fa-cloud fa-fw" aria-hidden="true"></i>Spa Delight</h1></span>
         <span class="dropdown">
             
             <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i>Menu</button>
@@ -129,7 +129,7 @@
 
             
      </div>
-
+     </div>
         <!--  Next Section 3 columns -->
 <main>
         <div class="container__content">
@@ -215,7 +215,7 @@
             </div>
     </div> <!-- Main Container Ends-->
     </main>
-    </div>
+
 
 
  <footer>
@@ -311,5 +311,6 @@
     
 </footer>
     </div>
+     <script src="/spa-delight/js/form.js"></script>
     </body>
 </html>
