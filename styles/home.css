@@ -1002,6 +1002,39 @@ li {
 }
 
 
+#ipic {
+    width: 280px;
+    height: 160px;
+    background-image: url(/images/Inspirepic.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: auto;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-item-align: center;
+
+    align-self: center;
+    padding: 0;
+
+}
+
+@media screen and (min-width: 769px) {
+    #ipic {
+        margin: 0;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+
+        width: 800px;
+        height: 350px;
+
+
+    }
+
+}
 
 
 #t-nrhub {
@@ -1219,8 +1252,8 @@ li {
 
     color: #ffffff;
     padding: 18px 10px;
-    width: 90%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
     border-radius: 10px;
     border: 0;
     font-size: 22px;
