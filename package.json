@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "karen's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwellfare/kwellportfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwellfare/kwellportfolio/issues"
+  },
+  "homepage": "https://github.com/kwellfare/kwellportfolio#readme",
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "font-awesome": "^4.7.0"
+  }
+}
